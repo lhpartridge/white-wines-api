@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const fetch = (...args)=> import('node-fetch').then(({default: fetch}) => fetch(...args))
  
-//copy-paste url from web api
 fetch('https://api.sampleapis.com/wines/whites')
     .then(res => res.json())
     .then(data => {
@@ -11,7 +10,6 @@ fetch('https://api.sampleapis.com/wines/whites')
  
 //all white wines
 //localhost:3000/whites
-//copy/paste URL from api.sampleapis.com
 router.get('/', (req, res) => {
     const URL = 'https://api.sampleapis.com/wines/whites'
  
