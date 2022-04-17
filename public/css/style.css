@@ -18,7 +18,7 @@ body {
 }
 
 .home, .single {
-    background-image: url("/css/media/cellar-background-2.jpg");
+    background-image: url("../media/cellar-background-2.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
